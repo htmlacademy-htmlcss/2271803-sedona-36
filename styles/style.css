@@ -177,8 +177,9 @@ body {
 
 }
 
-
-
+.reason {
+padding: 0;
+}
 
 .reason h2 {
     font-weight: 700;
@@ -195,6 +196,53 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
+
   }
 
-.reason-item
+.reason-item-house,
+.reason-item-souvenir {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 385px;
+  background: rgba(131, 179, 211, 0.12);
+
+}
+
+.reason-item-food {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 385px;
+
+}
+
+.reason-title {
+  width: 230px;
+  height: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.reason-description {
+  width: 230px;
+  height: 63px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+
+}
