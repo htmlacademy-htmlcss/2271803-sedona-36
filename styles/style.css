@@ -329,7 +329,6 @@ text-align: center;
 color: #FFFFFF;
 }
 
-.subscribe-form-email,
 .field {
   display: flex;
   flex-direction: row;
@@ -343,5 +342,18 @@ border-radius: 4px 0px 0px 4px;
 }
 
 .button {
-
+  background: #82B3D3;
+position: absolute;
+width: 232px;
+height: 52px;
+left: 66.08%;
+right: 0%;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
 }
