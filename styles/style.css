@@ -16,8 +16,6 @@
 
 html {
   background: #F2F2F2;
-
-
 }
 
 body {
@@ -28,9 +26,8 @@ body {
   background-color: #FFFFFF;
   width: 1200px;
   margin: 0 auto;
-  list-style: none; /* Не работает, не понимаю почему */
+  }
 
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,48 +41,46 @@ body {
   overflow: hidden;
 }
 
-
-
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
 
+.navigation-list {
+  list-style: none;
 }
 
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  text-align: Left;
-  vertical-align: Top;
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
-  width: 20px;
-  height: 20px;
 
 }
 
-
 .navigation-button {
+  width: 160px;
+  height: 36px;
   font-family: inherit;
-  font-size: 20px;
-  line-height: 36px;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
-  padding: 8px 50px;
-  gap: 10px;
-  position: absolute;
   border-radius: 4px;
-
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-index {
   color: #000000;
-
 }
 
 .hero{
@@ -95,7 +90,7 @@ body {
   height: 485px;
 }
 
-.advantages h2 {
+.advantages-title-general {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -104,7 +99,7 @@ body {
   color: #000000;
   }
 
-.advantages p {
+.advantages-general {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -116,11 +111,10 @@ body {
   list-style-type: none;
   padding: 0;
 }
+
 .advantages-line {
   width: 100%;
   display: flex;
-
-
 }
 
 .advantages-item {
@@ -133,7 +127,6 @@ body {
   height: 385px;
   background: #82B3D3;
   color: #FFFFFF;
-
 }
 
 .advantages-item-square,
@@ -174,92 +167,84 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
 }
 
 .reason {
 padding: 0;
 }
 
-.reason h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
+.reason-title-general {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
   }
 
-  .reason p {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #333333;
-
+.reason-general {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
   }
 
 .reason-item-house,
 .reason-item-souvenir {
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 385px;
-  background: rgba(131, 179, 211, 0.12);
-
+display: flex;
+flex-shrink: 0;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 400px;
+height: 385px;
+background: rgba(131, 179, 211, 0.12);
 }
 
 .reason-item-food {
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 400px;
-  height: 385px;
-
+display: flex;
+flex-shrink: 0;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 400px;
+height: 385px;
 }
 
 .reason-title {
-  width: 230px;
-  height: 28px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-
+width: 230px;
+height: 28px;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
 }
 
 .reason-description {
-  width: 230px;
-  height: 63px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #333333;
-
+width: 230px;
+height: 63px;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #333333;
 }
 
 .interest {
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: flex-start;
-  width: 1200px;
-  height: 406px;
-  background: #FFFFFF;
-
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: flex-start;
+width: 1200px;
+height: 406px;
+background: #FFFFFF;
 }
 
-.interest h2 {
+.interest-title {
 width: 297px;
 height: 36px;
 font-weight: 700;
@@ -269,18 +254,17 @@ text-transform: uppercase;
 color: #000000;
 }
 
-.interest p {
-  width: 592px;
-  height: 52px;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
-  }
+.interest-item {
+width: 592px;
+height: 52px;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #333333;
+}
 
 .interest-search {
-
-  display: flex;
+display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
@@ -288,12 +272,9 @@ width: 376px;
 height: 52px;
 background: #756157;
 border-radius: 4px;
-
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
-display: flex;
-align-items: center;
 text-align: center;
 text-transform: uppercase;
 text-decoration: none;
@@ -301,7 +282,7 @@ color: #FFFFFF;
 }
 
 .subscribe {
-  justify-content: center;
+justify-content: center;
 width: 1200px;
 height: 414.86px;
 background: url(../images/subscribe.jpg) no-repeat;
@@ -309,18 +290,17 @@ text-align: center;
 }
 
 .subscribe-title {
-  width: 404px;
+width: 404px;
 height: 36.35px;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
 color: #FFFFFF;
-
 }
 
-.subscribe p {
-  width: 475px;
+.subscribe-item {
+width: 475px;
 height: 52.51px;
 font-weight: 400;
 font-size: 22px;
@@ -330,60 +310,55 @@ color: #FFFFFF;
 }
 
 .field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 20px;
-  gap: 260px;
-  width: 452px;
+width: 452px;
 height: 52px;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #000000;
 background: #F2F2F2;
-border-radius: 4px 0px 0px 4px;
+border-radius: 4 0 0 4;
+border: 0;
 }
 
 .button {
-  background: #82B3D3;
-position: absolute;
 width: 232px;
 height: 52px;
-left: 66.08%;
-right: 0%;
+background: #82B3D3;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
+text-decoration: none;
 display: flex;
+flex-direction: row;
+justify-content: center;
 align-items: center;
-text-align: center;
+border-radius: 0 4 4 0;
 text-transform: uppercase;
 color: #FFFFFF;
+border: 0;
 }
 
 .page-footer {
-color: #000000;
-background-color: #FFFFFF;
 width: 1200px;
 height: 120px;
-
+color: #000000;
+background-color: #FFFFFF;
 }
 
-.footer-social {
-  width: 142px;
-  height: 40px;
+.footer-social-list {
+  list-style: none;
+  background: #FFFFFF;
 }
 
-.footer-contact a {
-  font-weight: 400;
+.footer-contact-phone {
+font-weight: 400;
 font-size: 40px;
 line-height: 40px;
 text-align: center;
 text-transform: uppercase;
 text-decoration: none;
 color: #000000;
-
-}
-
-.footer-site-by {
-
-  width: 115px;
-height: 33px;
 }
