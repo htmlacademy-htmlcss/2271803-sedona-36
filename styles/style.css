@@ -140,7 +140,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -421,12 +420,35 @@ text-decoration: none;
 color: inherit;
 }
 
+.filter-conteiner {
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+padding: 0;
+}
+
+.button-filter {
+  width: 191px;
+  }
+
+.catalog-filter-group {
+  display: inline-flex;
+  padding: 0;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
 .catalog-filter-title {
 font-weight: 700;
 font-size: 20px;
 line-height: 24px;
 text-transform: capitalize;
 color: #FFFFFF;
+}
+
+.catalog-filter-list {
+  border: none;
+  list-style: none;
 }
 
 .control {
@@ -453,12 +475,12 @@ width: 191px;
 height: 36px;
 font-weight: 700;
 border-radius: 4px;
-font-weight: 700;
 font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
 color: #FFFFFF;
 border: none;
+background: none;
 }
 
 .sorting-container {
