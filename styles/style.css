@@ -16,16 +16,24 @@
 
 html {
   background: #F2F2F2;
+  height: 100%;
 }
 
 body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
   width: 1200px;
-  margin: 0 auto;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
   }
 
 .visually-hidden {
@@ -77,6 +85,10 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-index {
