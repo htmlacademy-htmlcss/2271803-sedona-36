@@ -30,10 +30,6 @@ body {
   color: #333333;
   background-color: #FFFFFF;
   width: 1200px;
-
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
   }
 
 .visually-hidden {
@@ -54,8 +50,22 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
 }
 
 .navigation-link {
