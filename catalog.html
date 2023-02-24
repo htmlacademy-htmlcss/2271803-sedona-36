@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -25,19 +26,19 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="">
-              <img src="images/search.svg" width="44" height="64" alt="Иконка поиска">
+              <img src="images/search.svg" width="20" height="20" alt="Иконка поиска">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="">
-              <img src="images/favourites.svg" width="44" height="64" alt="Иконка сердце">
+              <img src="images/favourites.svg" width="20" height="20" alt="Иконка сердце">
               <span class="visually-hidden">Избранное</span>
               <span class="visually-hidden">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Хочу сюда!</a>
+            <a class="navigation-link navigation-button" href="">Хочу сюда!</a>
           </li>
         </ul>
 
@@ -46,7 +47,6 @@
 
     <main class="main-inner">
       <header class="inner-header">
-        <img src="images/catalog-back.jpg" width="1200" height="412" alt="Горы">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
       </header>
       <ul class="breadcrumbs">
@@ -120,28 +120,29 @@
           <button class="button-reset" type="submit">Сбросить</button>
         </form>
 
-        <p class="catalog-filter-search">Найдено гостиниц: <span class="catalog-filter-search-result">38</span></p>
 
 
+        <div class="sorting-container">
+          <p class="catalog-filter-search">Найдено гостиниц: <span class="catalog-filter-search-result">38</span></p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
 
-          <a href="#" class="button">
+          <a href="#" class="button button-light">
             <img src="images/cards.svg" width="16" height="14" alt="Иконка карточки">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a href="#" class="button">
+          <a href="#" class="button button-light">
             <img src="images/card.svg" width="16" height="14" alt="Иконка карточка">
             <span class="visually-hidden">Показать одну карточку</span>
           </a>
-          <a href="#" class="button">
+          <a href="#" class="button button-light">
             <img src="images/list.svg" width="16" height="14" alt="Иконка список">
             <span class="visually-hidden">Показать список</span>
           </a>
-
+        </div>
 
           <ul class="hotel-list">
             <li class="hotel-card">
@@ -155,8 +156,8 @@
               </div>
               <div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button" href="#">
-                  <span class="hotel-card-button button">В избранное</span>
+                <a class="hotel-card-button-favourites" href="#">
+                  <span>В избранное</span>
                 </a>
               </div>
               <div>
@@ -176,8 +177,8 @@
               </div>
               <div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button" href="#">
-                  <span class="hotel-card-button button">В избранном</span>
+                <a class="hotel-card-button-favourites" href="#">
+                  <span>В избранном</span>
                 </a>
               </div>
               <div>
@@ -197,8 +198,8 @@
               </div>
               <div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button" href="#">
-                  <span class="hotel-card-button button">В избранное</span>
+                <a class="hotel-card-button-favourites" href="#">
+                  <span>В избранное</span>
                 </a>
               </div>
               <div>
@@ -218,8 +219,8 @@
               </div>
               <div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
-                <a class="hotel-card-button" href="#">
-                  <span class="hotel-card-button button">В избранное</span>
+                <a class="hotel-card-button-favourites" href="#">
+                  <span>В избранное</span>
                 </a>
               </div>
               <div>
@@ -256,9 +257,9 @@
 
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="subscribe-form-email visually-hidden">
+          <label class="subscribe-form-email">
             <span class="visually-hidden">Подпишитесь</span>
             <input class="field" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
           </label>
@@ -272,19 +273,19 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="footer-logo" href="#">
               <img src="images/vk.svg" width="24" height="14" alt="Логотип Вконтакте">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="footer-logo" href="#">
               <img src="images/telegram.svg" width="18" height="15.1" alt="Логотип Телеграм">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="footer-logo" href="#">
               <img src="images/youtube.svg" width="22" height="17" alt="Логотип Ютуб">
               <span class="visually-hidden">Ютуб</span>
             </a>
