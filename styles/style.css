@@ -392,7 +392,6 @@ align-items: center;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: none;
-
 }
 
 .button {
@@ -410,14 +409,20 @@ align-items: center;
 }
 
 .page-footer {
+  display: flex;
   width: 1200px;
   height: 120px;
   color: #000000;
   background-color: #FFFFFF;
-  display: flex;
   padding: 0;
   margin: 0 auto;
   justify-content: space-between;
+}
+
+.footer-social {
+  max-width: 200px;
+  margin-left: 70px;
+  margin-top: 45px;
 }
 
 .footer-social-list {
@@ -425,14 +430,19 @@ align-items: center;
   list-style: none;
   background: #FFFFFF;
   justify-content: center;
-  margin: 0;
-  padding: 0 10;
+  padding: 0 auto;
   gap: 10px;
   text-align: center;
+  flex-wrap: wrap;
+}
 
+.footer-social-item {
+padding: 0;
+margin: 0;
 }
 
 .footer-contact-phone {
+  display: flex;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -440,6 +450,13 @@ align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  margin-top: 40px;
+}
+
+.footer-site-by{
+  display: flex;
+  margin-top: 48.5px;
+  margin-right: 70.1px;
 }
 
 .main-inner {
