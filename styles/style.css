@@ -361,6 +361,9 @@ align-items: center;
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 20px;
 }
 
 .subscribe-item {
@@ -369,6 +372,14 @@ align-items: center;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  margin: 0 auto;
+  padding-bottom: 54px;
+}
+
+.subscribe-form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .field {
@@ -377,29 +388,25 @@ align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   color: #000000;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
-  border: 0;
-  margin: 0 auto;
+  border: none;
+
 }
 
 .button {
   width: 232px;
-  height: 52px;
   background: #82B3D3;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  border: 0;
+  border: none;
+  border-radius: 0 4px 4px 0;
 }
 
 .page-footer {
