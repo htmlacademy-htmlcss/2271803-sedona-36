@@ -87,7 +87,7 @@ body {
 }
 
 .search {
-  padding: 23.5px 12.5px 22.5px 13.5px;
+  padding: 23px 13px;
 }
 
 .favourites {
@@ -133,7 +133,7 @@ body {
   background-color: #FFFFFF;
   background-image: url("../images/index-background.jpg");
   height: 485px;
-  }
+}
 
 .advantages-title-general {
   font-weight: 700;
@@ -178,7 +178,7 @@ body {
   background: #82B3D3;
   color: #FFFFFF;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 
 .advantages-item-square,
@@ -437,8 +437,8 @@ align-items: center;
 }
 
 .footer-social-item {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-contact-phone {
@@ -453,10 +453,10 @@ margin: 0;
   margin-top: 40px;
 }
 
-.footer-site-by{
+.footer-site-by {
   display: flex;
-  margin-top: 48.5px;
-  margin-right: 70.1px;
+  margin-top: 49px;
+  margin-right: 70px;
 }
 
 .main-inner {
@@ -581,26 +581,26 @@ margin: 0;
 }
 
 .catalog-filter-search {
-min-width: 338px;
-margin: 0;
-padding: 0;
-padding-right: 192px;
-text-align: center;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
+  min-width: 338px;
+  margin: 0;
+  padding: 0;
+  padding-right: 192px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .select-control {
-width: 292px;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-padding-left: 20px;
-padding-top: 14px;
-padding-bottom: 14px;
-margin-right: 70px;
+  width: 292px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-right: 70px;
 }
 
 .button-light {
@@ -675,9 +675,9 @@ margin-right: 70px;
 }
 
 .pagination-container {
-display: flex;
-background: #ffffff;
-padding: 0;
+  display: flex;
+  background: #ffffff;
+  padding: 0;
 }
 
 .pagination {
@@ -706,7 +706,7 @@ padding: 0;
   color: #FFFFFF;
   align-items: center;
   text-align: center;
-  padding-top: 11.36px;
+  padding-top: 12px;
   text-decoration: none;
 }
 
@@ -723,7 +723,7 @@ padding: 0;
 
 .subscribe-catalog {
   justify-content: center;
-  height: 414.86px;
+  height: 415px;
   background: #FFFFFF;
   text-align: center;
   margin: 0 auto;
