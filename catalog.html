@@ -7,11 +7,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="index.html">
+      <a class="navigation-logo" href="">
         <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
       </a>
       <nav class="navigation">
-         <ul class="navigation-list">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
@@ -25,20 +25,20 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link search" href="">
               <img src="images/search.svg" width="20" height="20" alt="Иконка поиска">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link favourites" href="">
               <img src="images/favourites.svg" width="20" height="20" alt="Иконка сердце">
               <span class="visually-hidden">Избранное</span>
               <span class="visually-hidden">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-button" href="">Хочу сюда!</a>
+            <a class="navigation-button" href="">Хочу сюда!</a>
           </li>
         </ul>
 
@@ -122,10 +122,6 @@
 
           </form>
         </div>
-
-
-
-
         <div class="sorting-container">
           <p class="catalog-filter-search">Найдено гостиниц: <span class="catalog-filter-search-result">38</span></p>
           <select class="select-control" aria-label="Сортировка">
@@ -134,15 +130,15 @@
             <option value="popular">Сначала популярные</option>
           </select>
 
-          <a href="#" class="button button-light">
+          <a href="#" class="button-light">
             <img src="images/cards.svg" width="16" height="14" alt="Иконка карточки">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a href="#" class="button button-light">
+          <a href="#" class="button-light">
             <img src="images/card.svg" width="16" height="14" alt="Иконка карточка">
             <span class="visually-hidden">Показать одну карточку</span>
           </a>
-          <a href="#" class="button button-light">
+          <a href="#" class="button-light">
             <img src="images/list.svg" width="16" height="14" alt="Иконка список">
             <span class="visually-hidden">Показать список</span>
           </a>
@@ -233,35 +229,37 @@
               </div>
             </li>
           </ul>
+          <div class="pagination-container">
+            <ol class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link-current" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ol>
+          </div>
 
-          <ol class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link-current" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ol>
 
       </section>
 
 
 
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-catalog">
+        <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="subscribe-item-catalog">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscribe-form-email">
             <span class="visually-hidden">Подпишитесь</span>
