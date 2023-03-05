@@ -649,8 +649,6 @@ body {
   grid-template-rows: min-content 36px 37px;
   grid-template-columns: 140px 140px;
   gap: 20px;
-
-
 }
 
 .hotel-card-type {
