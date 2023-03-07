@@ -149,10 +149,19 @@ body {
 
 
 .hero {
+  display: block;
   text-align: center;
   background-color: #FFFFFF;
   background-image: url("../images/index-background.jpg");
   height: 485px;
+}
+
+.hero::after {
+  display: block;
+  content: "";
+  background-image: url("../images/Vector.svg");
+  background-color: #ffffff;
+  background-size: 100% auto;
 }
 
 .hero-index {
