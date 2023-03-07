@@ -154,6 +154,8 @@ body {
   background-color: #FFFFFF;
   background-image: url("../images/index-background.jpg");
   height: 485px;
+  padding-top: 51px;
+  background-repeat: no-repeat;
 }
 
 .hero::after {
@@ -165,9 +167,9 @@ body {
 }
 
 .hero-index {
-  position: absolute;
-  left: 40%;
-  top: 22%;
+  display: block;
+  margin: 0 auto;
+
 }
 
 .advantages-title-general {
