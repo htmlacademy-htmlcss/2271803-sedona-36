@@ -50,12 +50,20 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   margin-left: 70px;
+  height: 64px;
+
+}
+
+.navigation-logo {
+  position: absolute;
+
 }
 
 .navigation {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding-left: 140px;
 }
 
 .navigation-list {
@@ -70,7 +78,6 @@ body {
 .navigation-user {
   max-width: 250px;
   margin-left: auto;
-
 }
 
 .navigation-link {
