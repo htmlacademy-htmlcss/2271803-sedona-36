@@ -51,12 +51,10 @@ body {
   background-color: #FFFFFF;
   margin-left: 70px;
   height: 64px;
-
 }
 
 .navigation-logo {
   position: absolute;
-
 }
 
 .navigation {
@@ -91,6 +89,20 @@ body {
   padding: 20px 16px;
   margin: 0;
   border: none;
+}
+
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
 }
 
 .search {
