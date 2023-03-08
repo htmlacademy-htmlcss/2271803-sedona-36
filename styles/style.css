@@ -748,6 +748,23 @@ body {
   border: none;
 }
 
+.button-apply:hover {
+  background: #68A2CA;
+}
+
+.button-apply:focus {
+  background: #68A2CA;
+}
+
+.button-apply:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-apply:disabled {
+  background: #E5E5E5;
+}
+
 .button-reset {
   width: 191px;
   height: 36px;
@@ -758,7 +775,24 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
-  background: none;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
 }
 
 .sorting-container {
