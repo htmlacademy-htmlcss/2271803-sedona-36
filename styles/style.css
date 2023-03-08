@@ -578,7 +578,8 @@ body {
 }
 
 .footer-logo:active {
-  color: rgba(104, 162, 202, 0.3);;
+  color: rgba(104, 162, 202, 0.3);
+  ;
 }
 
 .footer-contact-phone {
@@ -593,10 +594,38 @@ body {
   margin-top: 45px;
 }
 
+.footer-contact-phone:hover {
+  color: #756157;
+}
+
+.footer-contact-phone:focus {
+  color: #756157;
+}
+
+.footer-contact-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-site-by {
   display: flex;
   margin-top: 49px;
   margin-right: 70px;
+}
+
+.footer-htmlacademy-logo {
+  color: #000000;
+}
+
+.footer-htmlacademy-logo:hover {
+  color: #756157;
+}
+
+.footer-htmlacademy-logo:focus {
+  color: #756157;
+}
+
+.footer-htmlacademy-logo:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .main-inner {
