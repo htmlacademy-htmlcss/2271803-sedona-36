@@ -244,6 +244,34 @@ body {
   margin-bottom: 62px;
 }
 
+.advantages-title-current {
+  position: relative;
+}
+
+.advantages-title-current::after {
+  position: absolute;
+  content: "";
+  right: 170px;
+  left: 170px;
+  bottom: -30px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-title-line {
+  position: relative;
+}
+
+.advantages-title-line::after {
+  position: absolute;
+  content: "";
+  right: 170px;
+  left: 170px;
+  bottom: -30px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
