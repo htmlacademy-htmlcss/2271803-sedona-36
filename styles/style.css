@@ -649,11 +649,33 @@ body {
   list-style: none;
   text-decoration: none;
   margin: 0;
+  padding: 0;
   margin-bottom: 40px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: end;
 }
 
 .breadcrumbs-link {
+  display: flex;
   color: inherit;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  background-image: url(../images/breadcrums-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  width: 8px;
+  height: 19px;
+  padding: 0 11px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  display: flex;
 }
 
 .filter-conteiner {
