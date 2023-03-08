@@ -565,6 +565,22 @@ body {
   margin: 0;
 }
 
+.footer-logo {
+  color: #83B3D3;
+}
+
+.footer-logo:hover {
+  color: #68A2CA;
+}
+
+.footer-logo:focus {
+  color: #68A2CA;
+}
+
+.footer-logo:active {
+  color: rgba(104, 162, 202, 0.3);;
+}
+
 .footer-contact-phone {
   display: flex;
   font-weight: 400;
