@@ -1052,6 +1052,18 @@ body {
   color: #000000;
 }
 
+.pagination-link-current {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  padding-top: 17px;
+  color: #000000;
+  text-decoration: none;
+}
+
 .subscribe-catalog {
   justify-content: center;
   height: 415px;
