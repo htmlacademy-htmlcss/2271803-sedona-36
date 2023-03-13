@@ -1223,11 +1223,9 @@ body {
 }
 
 .modal-container {
-  display: grid;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -1240,17 +1238,18 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-}
-
-.modal-auth {
   width: 717px;
+  display: grid;
+  grid-column: 120px 110px 183px 110px;
+  grid-row: 48px 48px 48px 60px;
+  gap: 18px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 64px;
+  right: 70px;
   width: 52px;
   height: 52px;
   background-color: #F2F2F2;
@@ -1274,7 +1273,11 @@ body {
   text-transform: uppercase;
 }
 
+.auth-form {}
+
 .auth-form-label {
+  display: grid;
+  align-items: center;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -1285,8 +1288,10 @@ body {
 
 .auth-form-field {
   width: 440px;
+
 }
 
+.auth-form-field::after {}
 
 .auth-form-field::placeholder {
   font-family: 'PT Sans';
@@ -1302,11 +1307,19 @@ body {
 
 }
 
+.field-group-date {
+  display: grid;
+}
+
 .date-text-error {
+  display: grid;
+  grid-column: 2 / 5;
   color: #FF5757;
 }
 
 .date-text {
+  display: grid;
+  grid-column: 2 / 5;
   color: #333333;
 }
 
@@ -1344,6 +1357,17 @@ body {
 
 .field-group-number {
   display: flex;
+  margin-bottom: 48px;
+}
+
+.field-group-number-adults {
+  display: flex;
+  width: 247px;
+}
+
+.field-group-number-children {
+  display: flex;
+  width: 242px;
 }
 
 .field-button {
@@ -1402,15 +1426,16 @@ body {
   width: 216px;
   padding: 15px 18px 18px 22px;
   margin: 10px;
+  display: none;
 }
 
 .tooltip-text::before {
   position: absolute;
   content: "";
-  left:62px;
+  left: 62px;
   top: -10px;
-  width:0px;
-  height:0px;
+  width: 0px;
+  height: 0px;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 15px solid #333333;
