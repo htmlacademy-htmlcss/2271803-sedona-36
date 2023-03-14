@@ -746,7 +746,7 @@ body {
   border-radius: 4px 0px 0px 4px;
   border: none;
   appearance: textfield;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans' ,sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1223,12 +1223,18 @@ body {
 }
 
 .modal-container {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 1;
+}
+
+.modal-content {
+  display: grid;
 }
 
 .modal {
@@ -1238,11 +1244,12 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  width: 717px;
+  width: 577px;
+  height: 448px;
   display: grid;
-  grid-column: 120px 110px 183px 110px;
-  grid-row: 48px 48px 48px 60px;
-  gap: 18px;
+  grid-template-columns: 120px 110px 165px 110px;
+  grid-template-rows: 98px 73px 73px 48px 60px;
+  gap: 24px;
 }
 
 .modal-close-button {
@@ -1262,6 +1269,9 @@ body {
 }
 
 .modal-title {
+
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
   margin: 0;
   margin-bottom: 64px;
   font-family: 'PT Sans';
@@ -1276,7 +1286,8 @@ body {
 .auth-form {}
 
 .auth-form-label {
-  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   align-items: center;
   font-family: 'PT Sans';
   font-style: normal;
@@ -1288,7 +1299,8 @@ body {
 
 .auth-form-field {
   width: 440px;
-
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
 }
 
 .auth-form-field::after {}
@@ -1304,7 +1316,11 @@ body {
 
 .form-icon {
   color: rgba(117, 97, 87, 0.3);
-
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+  position: absolute;
+  right: 22px;
+  top: 0;
 }
 
 .field-group-date {
@@ -1312,14 +1328,16 @@ body {
 }
 
 .date-text-error {
-  display: grid;
   grid-column: 2 / 5;
+  grid-row: 2 / 3;
   color: #FF5757;
+  position: absolute;
+  top: 20px;
 }
 
 .date-text {
-  display: grid;
   grid-column: 2 / 5;
+  grid-row: 3 / 4;
   color: #333333;
 }
 
