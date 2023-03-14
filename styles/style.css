@@ -885,6 +885,8 @@ body {
 }
 
 .control {
+  position: relative;
+  display: block;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
@@ -968,21 +970,22 @@ body {
   opacity: 0.1;
 }
 
-.sorting-container {
+.sorting-container-result {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background: #FFFFFF;
   color: #000000;
-  margin-top: 57px;
-  margin-bottom: 40px;
-  padding: 0;
-  height: 47px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  min-height: 49px;
 }
 
 .catalog-filter-search {
   min-width: 338px;
   margin: 0;
   padding: 0;
-  padding-right: 192px;
+  padding-right: 200px;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
@@ -990,21 +993,39 @@ body {
   text-transform: uppercase;
 }
 
+.sorting-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 522px;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: start;
+  width: 292px;
+  margin-right: auto;
+}
+
 .select-control {
   width: 100%;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  padding: 12px 20px;
-  margin-right: 70px;
+  padding: 12px 18px 12px;
+  padding-right: 48px;
   color: #333333;
+  background-color: #FFFFFF;
   appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-image: url(../images/arrow-down.svg);
   background-repeat: no-repeat;
-  background-position: right 20px center;
-  padding-right: 40px;
+  background-position: right 18px center;
+  outline: none;
+  cursor: pointer;
 }
 
 .select-control:hover {
@@ -1024,16 +1045,81 @@ body {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-.button-light {
-  background: #FFFFFF;
-  padding: 17px 16px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
+.sorting-card-list {
+  width: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sorting-card-item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sorting-card-item:not(:nth-child(3n)) {
   margin-right: 8px;
 }
 
-.button-light-current {
+.button-light {
+  width: 48px;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #E5E5E5;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-light:active {
   border-color: #000000;
+}
+
+.button-light:hover {
+  border-color: #000000;
+}
+
+.button-light:focus {
+  border-color: #68A2CA;
+  outline: 0;
+}
+
+.button-light:active{
+  border-color: #000000;
+}
+
+.card-type {
+  border-color: #000000;
+  background-image: url("../images/cards.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.screen-type {
+  background-image: url("../images/card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.list-type {
+  background-image: url("../images/list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
 }
 
 .hotel-list {
