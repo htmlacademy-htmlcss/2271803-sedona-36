@@ -115,9 +115,29 @@ body {
   padding: 23px 13px;
 }
 
+.search:hover,
+.navigation-logo:focus {
+  color: #615048;
+}
+
+.search:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .favourites {
   padding: 22px 12px;
   margin-right: 20px;
+}
+
+.favourites:hover,
+.navigation-logo:focus {
+  color: #615048;
+}
+
+.favourites:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation-favourites-sum {
@@ -605,7 +625,6 @@ body {
 
 .footer-logo:active {
   color: rgba(104, 162, 202, 0.3);
-  ;
 }
 
 .footer-contact-phone {
