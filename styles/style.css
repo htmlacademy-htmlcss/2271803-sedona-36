@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -657,7 +657,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -746,7 +746,7 @@ body {
   border-radius: 4px 0px 0px 4px;
   border: none;
   appearance: textfield;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -763,7 +763,7 @@ body {
   border-radius: 0px 4px 4px 0px;
   border: none;
   appearance: textfield;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -787,7 +787,7 @@ body {
   position: absolute;
   right: 20px;
   top: 12px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1182,7 +1182,7 @@ body {
 }
 
 .pagination-link-current {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -1287,7 +1287,7 @@ body {
   max-width: 540px;
   margin: 0;
   margin-bottom: 64px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1318,7 +1318,7 @@ body {
 
 .form-label {
   display: flex;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1334,7 +1334,7 @@ body {
 }
 
 .form-label-children {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1450,7 +1450,7 @@ body {
 .modal-adult-counter {
   width: 31px;
   height: 48px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1552,7 +1552,7 @@ body {
 }
 
 .label-tooltip {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1604,7 +1604,7 @@ body {
   left: 50%;
   background-color: #333333;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1642,7 +1642,7 @@ body {
   width: 577px;
   margin: 0;
   padding: 18px 20px 18px 20px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
