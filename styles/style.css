@@ -746,7 +746,7 @@ body {
   border-radius: 4px 0px 0px 4px;
   border: none;
   appearance: textfield;
-  font-family: 'PT Sans' ,sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1230,11 +1230,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  z-index: 1;
+  z-index: 3;
 }
 
-.modal-content {
-  display: grid;
+.modal-container-close {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
@@ -1244,19 +1245,13 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  width: 577px;
-  height: 448px;
-  display: grid;
-  grid-template-columns: 120px 110px 165px 110px;
-  grid-template-rows: 98px 73px 73px 48px 60px;
-  gap: 24px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
   top: 64px;
-  right: 70px;
+  right: 52px;
   width: 52px;
   height: 52px;
   background-color: #F2F2F2;
@@ -1268,22 +1263,48 @@ body {
   cursor: pointer;
 }
 
-.modal-title {
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
 
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  opacity: 0.6;
+  background-color: #E6E6E6;
+  outline: none;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  max-width: 540px;
   margin: 0;
   margin-bottom: 64px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
-.auth-form {}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
 
 .auth-form-label {
   grid-column: 1 / 2;
