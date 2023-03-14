@@ -120,9 +120,31 @@
             </fieldset>
 
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group group-range">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input-from" type="number" value="0" name="min-price">
+                    <span class="range-input-text">от</span>
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input-to" type="number" value="9000" name="max-price" style="width: ">
+                    <span class="range-input-text">до</span>
+                  </label>
+                </div>
 
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="button-filter">
               <button class="button-apply" type="submit">Применить</button>
@@ -232,8 +254,7 @@
                 <span>В избранное</span>
               </a>
 
-              <img class="hotel-card-image-stars" src="images/stars-two.png" width="140" height="37"
-                alt="Две звезды.">
+              <img class="hotel-card-image-stars" src="images/stars-two.png" width="140" height="37" alt="Две звезды.">
               <span class="hotel-card-top">Рейтинг: 5,0</span>
             </div>
           </li>
