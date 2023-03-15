@@ -691,7 +691,6 @@ body {
   background-image: url(../images/catalog-back.jpg);
   background-repeat: no-repeat;
   padding-left: 70px;
-  flex-grow: 1;
 }
 
 .inner-header-title {
