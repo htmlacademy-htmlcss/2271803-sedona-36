@@ -691,6 +691,7 @@ body {
   background-image: url(../images/catalog-back.jpg);
   background-repeat: no-repeat;
   padding-left: 70px;
+  flex-grow: 1;
 }
 
 .inner-header-title {
@@ -900,9 +901,58 @@ body {
 .control {
   position: relative;
   display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus ~ .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  content: "";
 }
 
 .catalog-filter-item {
@@ -924,6 +974,7 @@ body {
 }
 
 .button-apply {
+  font-family: "PT Sans", Arial, sans-serif;
   width: 191px;
   height: 36px;
   background: #82B3D3;
@@ -934,7 +985,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .button-apply:hover {
@@ -955,6 +1006,7 @@ body {
 }
 
 .button-reset {
+  font-family: "PT Sans", Arial, sans-serif;
   width: 191px;
   height: 36px;
   font-weight: 700;
@@ -965,6 +1017,7 @@ body {
   color: #FFFFFF;
   border: none;
   background: transparent;
+  padding-top: 10px;
 }
 
 .button-reset:hover {
