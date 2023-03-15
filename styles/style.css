@@ -232,27 +232,40 @@ body {
 .hero-index {
   display: block;
   margin: 0 auto;
+}
 
+.advantages-general-wrapper {
+  font-family: "PT Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 261px;
+  justify-content: center;
+  padding: 69px 0 90px;
 }
 
 .advantages-title-general {
+  font-family: "PT Sans", Arial, sans-serif;
+  display: block;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 69px;
+  text-align: center;
+  margin: 0 auto 25px;
+  width: 630px;
+  padding: 0;
 }
 
 .advantages-general {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  display: block;
+  margin: 0 auto;
+  width: 655px;
   text-align: center;
-  color: #333333;
-  margin-bottom: 90px;
-
+  padding: 0;
 }
 
 .advantages-list {
