@@ -232,27 +232,40 @@ body {
 .hero-index {
   display: block;
   margin: 0 auto;
+}
 
+.advantages-general-wrapper {
+  font-family: "PT Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 261px;
+  justify-content: center;
+  padding: 69px 0 90px;
 }
 
 .advantages-title-general {
+  font-family: "PT Sans", Arial, sans-serif;
+  display: block;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 69px;
+  text-align: center;
+  margin: 0 auto 25px;
+  width: 630px;
+  padding: 0;
 }
 
 .advantages-general {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  display: block;
+  margin: 0 auto;
+  width: 655px;
   text-align: center;
-  color: #333333;
-  margin-bottom: 90px;
-
+  padding: 0;
 }
 
 .advantages-list {
@@ -674,7 +687,7 @@ body {
 }
 
 .main-inner {
-  background-color: #FFFFFF;
+  background-color: #3B4D57;
   background-image: url(../images/catalog-back.jpg);
   background-repeat: no-repeat;
   padding-left: 70px;
@@ -887,9 +900,58 @@ body {
 .control {
   position: relative;
   display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus ~ .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  content: "";
 }
 
 .catalog-filter-item {
@@ -911,6 +973,7 @@ body {
 }
 
 .button-apply {
+  font-family: "PT Sans", Arial, sans-serif;
   width: 191px;
   height: 36px;
   background: #82B3D3;
@@ -921,7 +984,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .button-apply:hover {
@@ -942,6 +1005,7 @@ body {
 }
 
 .button-reset {
+  font-family: "PT Sans", Arial, sans-serif;
   width: 191px;
   height: 36px;
   font-weight: 700;
@@ -952,6 +1016,7 @@ body {
   color: #FFFFFF;
   border: none;
   background: transparent;
+  padding-top: 10px;
 }
 
 .button-reset:hover {
