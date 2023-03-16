@@ -687,11 +687,13 @@ body {
 }
 
 .main-inner {
-  background-color: #3B4D57;
   background-image: url(../images/catalog-back.jpg);
   background-repeat: no-repeat;
+  background: #ffffff;
   padding-left: 70px;
 }
+
+
 
 .inner-header-title {
   font-size: 60px;
